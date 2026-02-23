@@ -1,7 +1,7 @@
 ---
 title: Super Lo-Fi Bros 
 release: 2023/12/15
-image: ../media/images/cover-super-lofi-bros.png
+image: ../../media/images/cover-super-lofi-bros.png
 description: First Full Album Release
 ---
 

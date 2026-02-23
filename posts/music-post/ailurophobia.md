@@ -1,7 +1,7 @@
 ---
 title: Ailurophobia (Original Game Soundtrack)
 release: 2025/06/23
-image: ../media/images/cover-ailurophobia.png
+image: ../../media/images/cover-ailurophobia.png
 description: Horror Visual Novel Sound Track
 ---
 
@@ -31,9 +31,9 @@ description: Horror Visual Novel Sound Track
 
 This is my second videogame soundtrack I have made. For this videogame we had 2 months to make a horror videogame and me and my friends decided we would make a visual novel. I was in charge of writing the story, creating the sound effects, creating the music, and coding all three into the game. For this music I had a lot of fun and still love most all the tracks I have created for it. The first song, "Welcome to Paradise" was a song I made for a college class a few months before the Game Jam with a talk box I just bought for myself. The song "They Watch Me in the Night" I mixed full on morse code into and made the whole song with the intention of making the morse code sound cool, I think I did a great job since it is a pretty creepy track that you wouldn't think morse code is in right away, but now that you do, you may have some fun relistening to see the songs true meaning. The song "Ominous Feeling" was supposed to play when the antagonist first appears and to make them seem even more creepy, I had the tempo constantly change. How the human ear/brain works is that we like patterns and we like things to stay predictable, so by having a constantly changing tempo, even if its just slightly, it will cause you to have just a little bit of discomfort.
 ###  
-Check it out on itch.io here: [Ailurophobia Game](https://ud-game-development-club.itch.io/ailurophobia "Go to Game")
+Check the game out on itch.io here: [Ailurophobia Game](https://ud-game-development-club.itch.io/ailurophobia "Go to Game")
 ###  
-Read up on the coding side of the project here: <a href="../project/ailurophobia.html">Ailurophobia Project</a>
+Read up on the coding side of the project here: <a href="../projects/ailurophobia.html">Ailurophobia Project</a>
 
 
 ## Listen

@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web App Dashboard - Projects</title>
+  <title>Ailurophobia - Portfolio</title>
+  <link rel="icon" href="../../media/images/icon.png" type="image/png">
   <link rel="stylesheet" href="../../styles/style.css">
 </head>
 <body>
@@ -19,11 +20,7 @@
   <div class="container">
     <a href="../../projects.html" class="back-link">← Back to Projects</a>
 
-    <div class="detail-header">
-      <div id="detail-image"></div>
-      <h1 id="detail-title"></h1>
-    </div>
-
+    <div id="detail-image" class="detail-header"></div>
     <div class="markdown-content" id="detail-content">
       <!-- Content will be loaded here -->
     </div>
@@ -36,7 +33,8 @@
   <script src="../../js/script.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      loadDetailPage('projects', 'web-app-dashboard');
+      const filename = getFilenameFromPath();
+      loadDetailPage('projects', filename);
     });
   </script>
 </body>

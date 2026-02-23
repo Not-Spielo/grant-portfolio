@@ -70,10 +70,17 @@ async function loadCards(type) {
   const container = document.getElementById('cards-container');
   if (!container) return;
 
+  // add a body class for project-specific styling
+  if (type === 'projects') {
+    document.body.classList.add('projects-page');
+  } else {
+    document.body.classList.remove('projects-page');
+  }
+
   // List of example files to try loading
   // Add your own project/music filenames here
   const filenames = type === 'projects' 
-    ? ['portfolio-website', 'web-app-dashboard']
+    ? [`untitled-starfox-tribute`, 'idle-type', `highsteaks`, `ailurophobia`, `missing-in-time`, `wavesplash`]
     : [`ailurophobia`, `infinite`, `missing-in-time`, `its-easy`, `peace-of-mind`, 'super-lofi-bros', `cycling`, 'hero-no-more'];
 
   for (let filename of filenames) {
@@ -101,12 +108,16 @@ function createCard(filename, metadata, type) {
   const title = metadata.title || filename.replace(/-/g, ' ').toUpperCase();
   const image = metadata.image || '';
   const description = metadata.description || '';
+  const release = metadata.release || '';
 
   card.innerHTML = `
-    ${image ? `<img src="${image}" alt="${title}" class="card-image">` : '<div class="card-image" style="background-color: #e0e0e0;"></div>'}
-    <div class="card-content">
-      <div class="card-title">${title}</div>
-      <div class="card-description">${description}</div>
+    <div class="card-media">
+      ${image ? `<img src="${image}" alt="${title}" class="card-image">` : '<div class="card-image" style="background-color: #e0e0e0;"></div>'}
+      <div class="card-overlay">
+        <div class="overlay-title">${title}</div>
+        ${release ? `<div class="overlay-release">${release}</div>` : ''}
+        <div class="overlay-description">${description}</div>
+      </div>
     </div>
   `;
 
@@ -123,6 +134,14 @@ async function loadDetailPage(type, filename) {
   const imageContainer = document.getElementById('detail-image');
   const titleContainer = document.getElementById('detail-title');
   const contentContainer = document.getElementById('detail-content');
+
+  // Add type-specific class to body
+  document.body.classList.remove('projects-page', 'music-page');
+  if (type === 'projects') {
+    document.body.classList.add('projects-page');
+  } else if (type === 'music') {
+    document.body.classList.add('music-page');
+  }
 
   try {
     const response = await fetch(path);

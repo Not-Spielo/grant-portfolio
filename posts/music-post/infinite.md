@@ -1,11 +1,11 @@
 ---
 title: Infinite (Single)
 release: 2024/12/14
-image: ../media/images/cover-infinite.png
-description: Dynamic Time Bending VideoGame Album
+image: ../../media/images/cover-infinite.png
+description: First Breakcore Song
 ---
 
-# Missing in Time (Original Game Soundtrack)
+# Infinite
 
 <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/22R1Bn9wLsvtiBPAOzD0UW?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 

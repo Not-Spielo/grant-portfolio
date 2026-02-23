@@ -1,7 +1,7 @@
 ---
 title: Missing in Time (Original Game Soundtrack)
 release: 2024/11/30
-image: ../media/images/cover-missing-in-time.png
+image: ../../media/images/cover-missing-in-time.png
 description: Dynamic Time Bending VideoGame Album
 ---
 
@@ -33,7 +33,7 @@ This is the very first videogame soundtrack I made and it was a lot of fun. We m
 ###  
 Check it out on itch.io here: [Missing in Time Game](https://ud-game-development-club.itch.io/missing-in-time "Go to Game")
 ###  
-Read up on the coding side of the project here: <a href="../project/missing-in-time.html">Missing in Time Project</a>
+Read up on the coding side of the project here: <a href="../projects/missing-in-time.html">Missing in Time Project</a>
 
 ## Listen
 

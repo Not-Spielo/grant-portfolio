@@ -1,7 +1,7 @@
 ---
 title: Cycling (Single)
 release: 2023/10/13
-image: ../media/images/cover-cycling.png
+image: ../../media/images/cover-cycling.png
 description: Best Performing Song
 ---
 

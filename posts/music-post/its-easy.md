@@ -1,11 +1,11 @@
 ---
 title: it's easy (Single)
 release: 2024/05/23
-image: ../media/images/cover-its-easy.png
+image: ../../media/images/cover-its-easy.png
 description: Remix of the song "its easy" by Olivia O.
 ---
 
-# Missing in Time (Original Game Soundtrack)
+# it's easy
 
 <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/1rtQuvcsZ1Om22X2zm8PXm?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 

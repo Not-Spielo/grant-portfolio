@@ -1,7 +1,7 @@
 ---
 title: Peace of Mind (Single)
 release: 2023/11/17
-image: ../media/images/cover-peace-of-mind.png
+image: ../../media/images/cover-peace-of-mind.png
 description: Fun Jazz Single
 ---
 

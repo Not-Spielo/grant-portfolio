@@ -1,7 +1,7 @@
 ---
 title: Hero No More
 release: 2023/01/14
-image: ../media/images/cover-hero-no-more.png
+image: ../../media/images/cover-hero-no-more.png
 description: First Foray Into Music
 ---
 
