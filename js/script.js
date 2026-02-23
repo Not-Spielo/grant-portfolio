@@ -65,6 +65,31 @@ function extractFrontmatter(markdown) {
   return { metadata, content };
 }
 
+function getSiteBasePath() {
+  const pathSegments = window.location.pathname.split('/').filter(Boolean);
+
+  if (window.location.hostname.endsWith('github.io') && pathSegments.length > 0) {
+    return `/${pathSegments[0]}/`;
+  }
+
+  return '/';
+}
+
+function resolveAssetPath(assetPath) {
+  if (!assetPath) return '';
+
+  if (/^(https?:)?\/\//i.test(assetPath) || assetPath.startsWith('data:')) {
+    return assetPath;
+  }
+
+  const cleanedPath = assetPath
+    .replace(/^\/+/, '')
+    .replace(/^(\.\.\/)+/, '')
+    .replace(/^\.\//, '');
+
+  return `${getSiteBasePath()}${cleanedPath}`;
+}
+
 // Load and generate cards for projects or music
 async function loadCards(type) {
   const container = document.getElementById('cards-container');
@@ -106,7 +131,7 @@ function createCard(filename, metadata, type) {
   card.style.cursor = 'pointer';
 
   const title = metadata.title || filename.replace(/-/g, ' ').toUpperCase();
-  const image = metadata.image || '';
+  const image = resolveAssetPath(metadata.image || '');
   const description = metadata.description || '';
   const release = metadata.release || '';
 
@@ -150,7 +175,7 @@ async function loadDetailPage(type, filename) {
 
     if (metadata.image && imageContainer) {
       const img = document.createElement('img');
-      img.src = metadata.image;
+      img.src = resolveAssetPath(metadata.image);
       img.alt = metadata.title || filename;
       img.className = 'detail-image';
       imageContainer.appendChild(img);
