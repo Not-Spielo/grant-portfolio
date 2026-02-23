@@ -84,7 +84,7 @@ async function loadCards(type) {
     : [`ailurophobia`, `infinite`, `missing-in-time`, `its-easy`, `peace-of-mind`, 'super-lofi-bros', `cycling`, 'hero-no-more'];
 
   for (let filename of filenames) {
-    const path = `../../posts/${type}-post/${filename}.md`;
+    const path = `posts/${type}-post/${filename}.md`;
     try {
       const response = await fetch(path);
       if (response.ok) {
