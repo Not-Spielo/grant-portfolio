@@ -122,7 +122,7 @@ function createCard(filename, metadata, type) {
   `;
 
   card.addEventListener('click', () => {
-    window.location.href = `pages/${type}/${filename}.html`;
+    window.location.href = `${type}/${filename}.html`;
   });
 
   return card;
@@ -130,7 +130,7 @@ function createCard(filename, metadata, type) {
 
 // Load and display detail page
 async function loadDetailPage(type, filename) {
-  const path = `../../posts/${type}-post/${filename}.md`;
+  const path = `../posts/${type}-post/${filename}.md`;
   const imageContainer = document.getElementById('detail-image');
   const titleContainer = document.getElementById('detail-title');
   const contentContainer = document.getElementById('detail-content');
